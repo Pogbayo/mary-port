@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+    </head>
+    
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Bassey Mary Progress</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Bassey Mary progress</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="profile" src="/images/profilepicture.jpg" alt="Mary Progress" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mary</h1>
+        <p class="section__text__p2">A writer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2">
+            <a href="./assets/cv.pdf" download="Mary_Progress_CV.pdf">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container" style=" height: 50px; display: flex;
+        justify-content: center; align-items: center;">
+          <i class="fab fa-linkedin" style="width: 80px;"></i>
+          <a href="https://www.instagram.com/@Joze_phine " target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="/images/profilepicture2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="fas fa-briefcase"></i>
+              <h3>Experience</h3>
+              <p>2+ years <br />Social Media management</p>
+            </div>
+            <div class="details-container">
+              <i class="fas fa-briefcase"></i>
+              <h3>Education</h3>
+              <p style="padding: 18px;">B.A English Language</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="background-color: whitesmoke; padding: 20px;  border-radius:10px;">
+                I am an experienced social media manager, content writer, editor, and virtual assistant with a strong academic background in English from the University of Uyo. My professional journey has equipped me with a diverse skill set, allowing me to excel in various roles within the digital landscape.I have successfully managed social media platforms and crafted engaging content for clients, including Adworld NG and Redemption Door, as well as several remote clients. My expertise lies in developing strategic content that resonates with target audiences and enhances brand visibility.Goals:
+                To expand my knowledge and expertise in digital marketing and content creation.
+               <p style="background-color: whitesmoke; margin-top: 5px; padding: 20px; border-radius:10px;" >To develop innovative strategies that drive engagement and growth for clients.
+                To enhance my skills in project management and client relations.
+                To foster collaborative relationships within diverse teams and contribute to impactful projects.
+                In my leisure time, I enjoy reading extensively, which fuels my creativity and broadens my perspective. I also have a passion for cooking, which allows me to explore new cultures and flavors. I am committed to delivering high-quality work that meets the unique needs of each client while continuously striving for personal and professional growth.</p> 
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container" style=" height: auto;">
+        <div class="about-containers" >
+          <main>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Social Media manager</h2>
+            <div class="article-container" style=" display: flex; flex-direction: column; padding-left: 10px;">
+              <article style="display: flex;
+              flex-direction: column;">
+                <div>Worked at AdWorld NG as a Social media manager</div>
+                <strong>2024</strong>
+              </article>
+              <article style="display: flex;
+              flex-direction: column;">
+               <div>Redemption door</div>
+               <strong>2023-2024</strong>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Content Writer</h2>
+            <div class="article-container" style=" text-align: center;">
+              <article style="display: flex;
+              flex-direction: column;  width: 80%;">
+                <h2  >BLACKNESS AND THE INTRICACIES OF DEFINING IT </h2>
+                <p style="width: 100%;"> 
+                   Blackness is an hotchpotch, it is a mosaic of diverse culture, language,
+                   tradition, and experience that does not have a single definition,
+                   it is just like trying to define the world.  All we can do is celebrate
+                   our diversities and complexities as we have only ourselves to love and
+                   support and honour. We express these diversities through our
+                   dressing, language, culture, music and art, but we are all brought together
+                   irrespective of our differences by our black root/history and understanding 
+                   this is key to happier and stronger community. </p>
+              </article>
+            </div>
+          </div>
+        </main>
+        </div>
+      </div>
+      
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container" style=" padding: 20px;">
+            <div class="article-container">
+              <img
+                id="carousel-img"
+                src="/images/main.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>           
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <section id="contact" >
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container" >
+        <div class="contact-info-container">
+          <i class="fas fa-envelope"></i>
+          <p  class="mailTo"><a class="alo" href="mailto:Basseymaya@gmail.com
+            ">Click here to mail me</a></p>
+        </div>
+        <div class="contact-info-container" style="display: flex; flex-direction: column;">
+          <div style="text-align: center;">
+          <i class="fab fa-linkedin"></i>
+          <p>
+            <a href="https://www.linkedin.com/in/bassey-maya-1b9346296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+              LinkedIn
+            </a>
+          </p>
+        </div>
+          <p>tel: 07019523381
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Mary Progress. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
