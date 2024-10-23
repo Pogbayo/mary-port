@@ -521,21 +521,25 @@ main{
       width: 100%; /* Take full width */
     }
   main{
-    display: flex;
+      display: flex;
       flex-direction: column; /* Stack children vertically */
       width: 100%; /* Take full width */
   }
   #profile{
     height: 700px;
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .section__text__p1{
+    margin-top: 10px;
   }
   .section__pic-container{
     height: 70%;
   }
   .profile{
-    min-height: 400px;
+    min-height: 390px;
   }
   .section__text{
     margin-top: 200px;
