@@ -527,7 +527,6 @@ main{
   }
   #profile{
     height: 700px;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     gap: 10px;
