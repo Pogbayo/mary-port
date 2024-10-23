@@ -234,7 +234,9 @@ section {
   border-radius: 2rem;
 }
 
-.btn-color-1,
+.btn-color-1{
+  width: auto;
+}
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
@@ -322,7 +324,25 @@ section {
 }
 
 /* EXPERIENCE SECTION */
+#videoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Space the videos with space between them */
+  align-items: center;
+  flex-wrap: wrap; /* Enable wrapping on smaller screens */
+  width: 90%;
+}
 
+#videoContainer video {
+  width: 18%; /* Make each video take 33% of the parent container */
+  height: auto;
+  border: 3px solid #333;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 #experience {
   position: relative;
 }
@@ -508,7 +528,6 @@ main{
   border: none;
   cursor: pointer;
 }
-
 .project-title {
   margin-top: 20px;
   font-size: 24px;
@@ -525,7 +544,8 @@ main{
       flex-direction: column; /* Stack children vertically */
       width: 100%; /* Take full width */
   }
-  #profile{
+
+ #profile{
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -542,6 +562,18 @@ main{
   }
   .section__text{
     margin-top: 200px;
+  }
+  #videoContainer {
+    margin-left: 10px;
+    flex-direction: column; /* Stack videos vertically */
+    justify-content: center; /* Center videos vertically */
+    gap: 10px;
+  }
+
+  #videoContainer video {
+    width: 100%; /* Make each video take 100% of the parent container */
+    object-fit: cover;
+    height: 300px;
   }
     .details-container {
       width: 80%; /* Each detail container will take full width */

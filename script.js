@@ -47,6 +47,7 @@ const images = [
   "/images/page6.jpg",
   "/images/page7.jpg",
   "/images/page8.jpg",
+  "/images/page9.jpg",
 ];
 
 let currentIndex = 0;
