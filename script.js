@@ -74,3 +74,43 @@ carouselImg.addEventListener("click", () => {
   isSlideshowRunning = false;
   clearInterval(interval);
 });
+
+const words = [
+  "an experienced social media manager",
+  "a content writer",
+  " an editor",
+  "and a virtual assistant",
+]; // Words you want to cycle through
+let i = 0;
+let currentWord = "";
+let isDeleting = false;
+
+function type() {
+  const typewriter = document.getElementById("typewriter");
+
+  // Determine the current part of the word based on whether the text is being typed or deleted
+  const fullWord = words[i];
+  const speed = isDeleting ? 100 : 150;
+
+  if (!isDeleting) {
+    currentWord = fullWord.slice(0, currentWord.length + 1);
+    typewriter.textContent = currentWord;
+    if (currentWord === fullWord) {
+      setTimeout(() => (isDeleting = true), 2000); // Pause before starting deletion
+    }
+  } else {
+    currentWord = fullWord.slice(0, currentWord.length - 1);
+    typewriter.textContent = currentWord;
+    if (currentWord === "") {
+      isDeleting = false;
+      i = (i + 1) % words.length; // Move to the next word or start over
+    }
+  }
+
+  setTimeout(type, speed); // Recursively call type() after a delay
+}
+
+// Start the typing effect when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(type, 1000); // Start typing after a short delay
+});

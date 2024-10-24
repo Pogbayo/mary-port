@@ -533,6 +533,27 @@ main{
   font-size: 24px;
 }
 
+#typewriter {
+  font-size: 24px;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid; /* Creates the blinking cursor */
+  width: 0; /* Initially hidden */
+  animation: typing 3.5s steps(20, end), blink 0.75s step-end infinite;
+}
+
+/* Animation for typing */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Animation for cursor blink */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
   @media (max-width: 586px) {
     .experience-details-container {
       display: flex;
