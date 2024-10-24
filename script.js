@@ -76,7 +76,7 @@ carouselImg.addEventListener("click", () => {
 });
 
 const words = [
-  "an experienced social media manager",
+  "a social media manager",
   "a content writer",
   " an editor",
   "and a virtual assistant",
